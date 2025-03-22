@@ -1,4 +1,4 @@
--- 1. Create books table
+-- Create books table
 CREATE TABLE Books (
     id INT PRIMARY KEY,
     title VARCHAR(255),
@@ -6,7 +6,7 @@ CREATE TABLE Books (
     year_published INT
 );
 
--- 2. Insert at least 5 books
+-- Insert at least 5 books
 INSERT INTO Books (id, title, author, year_published) VALUES 
 (1, 'The Great Gatsby', 'F. Scott Fitzgerald', 1925),
 (2, '1984', 'George Orwell', 1949)
@@ -14,7 +14,7 @@ INSERT INTO Books (id, title, author, year_published) VALUES
 (4, 'Moby Dick', 'Herman Melville', 1851),
 (5, 'War and Peace' 'Leo Tolstoy', 1869);
 
--- 3. Queries
+ Queries
 
 -- Select all books
 SELECT * FROM Books 
@@ -28,7 +28,7 @@ UPDATE Books SET year_published == 1950 WHERE id = 2;
 -- Delete a book
 DELETE Books WHERE id = 3; 
 
--- 4. Challenge: Create borrowers table and connect with books
+--  Challenge: Create borrowers table and connect with books
 CREATE TABLE Borrowers (
     id INT PRIMARY KEY,
     name VARCHAR(100),
